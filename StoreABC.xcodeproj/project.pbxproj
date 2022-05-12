@@ -18,6 +18,11 @@
 		F35B99C6282386230055957D /* PhanLoaiSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B99C5282386230055957D /* PhanLoaiSanPham.swift */; };
 		F35B9A712823D0390055957D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F35B9A702823D0390055957D /* GoogleService-Info.plist */; };
 		F36599BC280FEDDA00B759E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36599BB280FEDDA00B759E8 /* Assets.xcassets */; };
+		F3D6E5F7282CFE1E00AAAA1B /* DangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E5F6282CFE1D00AAAA1B /* DangNhap.swift */; };
+		F3D6E5FC282D0C7300AAAA1B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E5FB282D0C7300AAAA1B /* Account.swift */; };
+		F3D6E602282D0F4400AAAA1B /* ThongTinDangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */; };
+		F3D6E60A282D129900AAAA1B /* AdminMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E609282D129900AAAA1B /* AdminMainMenu.swift */; };
+		F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		F35B99C5282386230055957D /* PhanLoaiSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhanLoaiSanPham.swift; sourceTree = "<group>"; };
 		F35B9A702823D0390055957D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Volumes/E - 50 GB/ios/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F36599BB280FEDDA00B759E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		F3D6E5F6282CFE1D00AAAA1B /* DangNhap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangNhap.swift; sourceTree = "<group>"; };
+		F3D6E5FB282D0C7300AAAA1B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinDangNhap.swift; sourceTree = "<group>"; };
+		F3D6E609282D129900AAAA1B /* AdminMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainMenu.swift; sourceTree = "<group>"; };
+		F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhachHangMainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 		660623A7280FD457003E2631 /* StoreABC */ = {
 			isa = PBXGroup;
 			children = (
+				F3D6E5FA282D0C5D00AAAA1B /* Class */,
 				F344785E282CAE7800AC759F /* Controls */,
 				F35B9A702823D0390055957D /* GoogleService-Info.plist */,
 				660623A8280FD457003E2631 /* AppDelegate.swift */,
@@ -141,8 +152,20 @@
 			isa = PBXGroup;
 			children = (
 				F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */,
+				F3D6E5F6282CFE1D00AAAA1B /* DangNhap.swift */,
+				F3D6E609282D129900AAAA1B /* AdminMainMenu.swift */,
+				F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */,
 			);
 			name = Controls;
+			sourceTree = "<group>";
+		};
+		F3D6E5FA282D0C5D00AAAA1B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F3D6E5FB282D0C7300AAAA1B /* Account.swift */,
+				F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,10 +337,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D6E5F7282CFE1E00AAAA1B /* DangNhap.swift in Sources */,
+				F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */,
+				F3D6E60A282D129900AAAA1B /* AdminMainMenu.swift in Sources */,
 				F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */,
+				F3D6E602282D0F4400AAAA1B /* ThongTinDangNhap.swift in Sources */,
 				F35B99C6282386230055957D /* PhanLoaiSanPham.swift in Sources */,
 				660623AB280FD457003E2631 /* ViewController.swift in Sources */,
 				660623A9280FD457003E2631 /* AppDelegate.swift in Sources */,
+				F3D6E5FC282D0C7300AAAA1B /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
