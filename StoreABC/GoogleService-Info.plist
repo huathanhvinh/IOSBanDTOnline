@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>653990787383-n81qmgecqjcm4ej7dk5pei1sh80eqthc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.653990787383-n81qmgecqjcm4ej7dk5pei1sh80eqthc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAE_WWnwKaA2BRW1x1XvqMJ2OTU-fN3AIg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>653990787383</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>tdc.edu.vn.StoreABC</string>
+	<key>PROJECT_ID</key>
+	<string>storeabc-6b462</string>
+	<key>STORAGE_BUCKET</key>
+	<string>storeabc-6b462.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:653990787383:ios:7cf726e913e3084ef802b2</string>
+	<key>DATABASE_URL</key>
+	<string>https://storeabc-6b462-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
