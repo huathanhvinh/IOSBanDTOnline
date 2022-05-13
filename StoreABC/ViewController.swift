@@ -13,12 +13,10 @@ class ViewController:UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let ref = Database.database().reference()
-//        let object : [String : Any] = [
-//            "Email" : "vinh.huathanh@gmail.com",
-//            "MatKhau" : "123456"
-//        ]
-//        ref.child("Account").childByAutoId().setValue(object)
+        let ref = Database.database().reference()
+        let a:String = ref.child("Account").childByAutoId().key ?? "Lỗi"
+        //ref.child("Account").child(a).setValue("hihi")
+        
     }
     //MARK: Phân loại Sản Phẩm
     @IBAction func btnApple(_ sender: UIButton) {
