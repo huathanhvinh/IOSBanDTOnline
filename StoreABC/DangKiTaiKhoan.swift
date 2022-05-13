@@ -84,6 +84,32 @@ class DangKiTaiKhoan: UIViewController {
             }))
             self.present(alert, animated: true, completion: nil)
         }else{
+            //MARK: thêm accout vào firebase
+            let ref = Database.database().reference()
+            let idAccount:String = ref.child("Account").childByAutoId().key ?? "Lỗi"
+            let idThongTinCaNhan:String = ref.child("ThongTinCaNhan").childByAutoId().key ?? "Lỗi"
+            let object : [String : Any] = [
+                "TaiKhoan" : "\(tfTaiKhoan.text ?? "loi")",
+                "MatKhau" : "\(tkMatKhau.text ?? "loi")",
+                "PhanLoai" : 2,
+                "ID" : idAccount
+            ]
+            ref.child("Account").child(idAccount).setValue(object)
+            //MARK: thêm thông tin vào firebase
+            let object1 : [String : Any] = [
+                "TaiKhoan" : "\(tfTaiKhoan.text ?? "loi")",
+                "HoTen" : "Trống",
+                "SoDienThoai" : "Trống",
+                "DiaChi" : "Trống",
+                "ID" : idThongTinCaNhan
+            ]
+            ref.child("ThongTinCaNhan").child(idThongTinCaNhan).setValue(object1)
+            //MARK: làm mới các trường văn bản
+            tfTaiKhoan.text = ""
+            tkMatKhau.text = ""
+            tfXacNhanMatKhau.text = ""
+            
+            //thông báo
             let alert = UIAlertController(title: "Thông Báo", message: "Đăng kí thành công", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                 switch action.style{
@@ -101,26 +127,6 @@ class DangKiTaiKhoan: UIViewController {
                 }
             }))
             self.present(alert, animated: true, completion: nil)
-            //MARK: thêm accout vào firebase
-            let object : [String : Any] = [
-                "TaiKhoan" : "\(tfTaiKhoan.text ?? "loi")",
-                "MatKhau" : "\(tkMatKhau.text ?? "loi")",
-                "PhanLoai" : 2,
-            ]
-            let ref = Database.database().reference()
-            ref.child("Account").childByAutoId().setValue(object)
-            //MARK: thêm thông tin vào firebase
-            let object1 : [String : Any] = [
-                "TaiKhoan" : "\(tfTaiKhoan.text ?? "loi")",
-                "HoTen" : "Trống",
-                "SoDienThoai" : "Trống",
-                "DiaChi" : "Trống"
-            ]
-            ref.child("ThongTinCaNhan").childByAutoId().setValue(object1)
-            //MARK: làm mới các trường văn bản
-            tfTaiKhoan.text = ""
-            tkMatKhau.text = ""
-            tfXacNhanMatKhau.text = ""
         }
         
     }
