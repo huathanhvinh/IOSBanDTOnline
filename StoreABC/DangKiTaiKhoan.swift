@@ -152,4 +152,9 @@ class DangKiTaiKhoan: UIViewController {
             }
         })
     }
+    //MARK: Quay lại màn hình đăng nhập
+    @IBAction func btnQuayLaiManHinhDangNhap(_ sender: Any) {
+        let scr = storyboard?.instantiateViewController(withIdentifier: "ManHinhDangNhap") as! DangNhap
+        present(scr, animated: true, completion: nil)
+    }
 }

@@ -25,6 +25,8 @@
 		F3D6E602282D0F4400AAAA1B /* ThongTinDangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */; };
 		F3D6E60A282D129900AAAA1B /* AdminMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E609282D129900AAAA1B /* AdminMainMenu.swift */; };
 		F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */; };
+		F3E954F9282F44DB00E0468E /* ThongTinSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E954F8282F44DB00E0468E /* ThongTinSanPham.swift */; };
+		F3FF44F22833FF7A004181AF /* ChiTietSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF44F12833FF7A004181AF /* ChiTietSanPham.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinDangNhap.swift; sourceTree = "<group>"; };
 		F3D6E609282D129900AAAA1B /* AdminMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainMenu.swift; sourceTree = "<group>"; };
 		F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhachHangMainMenu.swift; sourceTree = "<group>"; };
+		F3E954F8282F44DB00E0468E /* ThongTinSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinSanPham.swift; sourceTree = "<group>"; };
+		F3FF44F12833FF7A004181AF /* ChiTietSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiTietSanPham.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */,
 				F3594961282D582900545B61 /* ThongTinCaNhan.swift */,
 				F3594965282DED5D00545B61 /* ThemSanPham.swift */,
+				F3E954F8282F44DB00E0468E /* ThongTinSanPham.swift */,
+				F3FF44F12833FF7A004181AF /* ChiTietSanPham.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -346,7 +352,9 @@
 				F3D6E5F7282CFE1E00AAAA1B /* DangNhap.swift in Sources */,
 				F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */,
 				F3D6E60A282D129900AAAA1B /* AdminMainMenu.swift in Sources */,
+				F3E954F9282F44DB00E0468E /* ThongTinSanPham.swift in Sources */,
 				F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */,
+				F3FF44F22833FF7A004181AF /* ChiTietSanPham.swift in Sources */,
 				F3D6E602282D0F4400AAAA1B /* ThongTinDangNhap.swift in Sources */,
 				F35B99C6282386230055957D /* PhanLoaiSanPham.swift in Sources */,
 				660623AB280FD457003E2631 /* ViewController.swift in Sources */,

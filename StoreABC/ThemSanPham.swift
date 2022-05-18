@@ -40,26 +40,26 @@ class ThemSanPham: UIViewController,UIImagePickerControllerDelegate, UINavigatio
         self.present(picker, animated: true, completion: nil)
     }
     
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[.editedImage] as? UIImage
-        if(selectImage == 0){
-            imgView.image = image
-        }else if(selectImage == 1)
-        {
-            imgView1.image = image
-        }else if(selectImage == 2)
-        {
-            imgView2.image = image
-        }else if(selectImage == 3)
-        {
-            imgView3.image = image
+        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            self.dismiss(animated: true, completion: nil)
         }
-        self.dismiss(animated: true, completion: nil)
-    }
+        
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            let image = info[.editedImage] as? UIImage
+            if(selectImage == 0){
+                imgView.image = image
+            }else if(selectImage == 1)
+            {
+                imgView1.image = image
+            }else if(selectImage == 2)
+            {
+                imgView2.image = image
+            }else if(selectImage == 3)
+            {
+                imgView3.image = image
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
     //MARK: Thêm ảnh phụ 1
     @IBAction func ThemAnhPhu1(_ sender: Any) {
         selectImage = 1

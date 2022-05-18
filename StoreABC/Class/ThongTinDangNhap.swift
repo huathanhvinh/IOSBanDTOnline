@@ -9,6 +9,6 @@
 import UIKit
 
 class ThongTinDangNhap {
-    static var taiKhoan = "thanhvinh"
+    static var taiKhoan = ""
     static var phanLoai = 0
 }

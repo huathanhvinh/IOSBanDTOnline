@@ -13,12 +13,20 @@ class DangNhap: UIViewController {
     //MARK: Khai báo biến
     @IBOutlet weak var tfTaiKhoan: UITextField!
     @IBOutlet weak var tfMatKhau: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //MARK: Chuyển màn hình nếu đã đăng nhập trước đó
+        if(ThongTinDangNhap.phanLoai == 1){
+            let scr = storyboard?.instantiateViewController(withIdentifier: "AdminMainMenu") as! AdminMainMenu
+            present(scr, animated: true, completion: nil)
+        }else if(ThongTinDangNhap.phanLoai == 2){
+            let scr = storyboard?.instantiateViewController(withIdentifier: "KhachHangMainMenu") as! KhachHangMainMenu
+            present(scr, animated: true, completion: nil)
+        }
+        
     }
- 
+    
     //MARK: Nút Đăng Nhập
     @IBAction func btnDangNhap(_ sender: UIButton) {
         if(tfTaiKhoan.text == "" || tfMatKhau.text == "")
@@ -54,12 +62,17 @@ class DangNhap: UIViewController {
                         {
                             ThongTinDangNhap.taiKhoan = tk
                             ThongTinDangNhap.phanLoai = pl
+                            
                         }
                     }
                     //MARK: Chuyển màn hình đăng nhập
                     if(ThongTinDangNhap.phanLoai != 0)
                     {
-                        
+                        if(ThongTinDangNhap.phanLoai == 1){
+                            self.Admin()
+                        }else if(ThongTinDangNhap.phanLoai == 2){
+                            self.KhachHang()
+                        }
                     }else
                     {
                         let alert = UIAlertController(title: "Thông Báo", message: "Tài khoản hoặc mật khẩu không đúng !", preferredStyle: .alert)
@@ -106,5 +119,14 @@ class DangNhap: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
+    //MARK: func Chuyển màn hình đến Admin
+    func Admin(){
+        let scr = storyboard?.instantiateViewController(withIdentifier: "AdminMainMenu") as! AdminMainMenu
+        present(scr, animated: true, completion: nil)
+    }
+    //MARK: func Chuyển màn hình đến Khách Hàng
+    func KhachHang(){
+        let scr = storyboard?.instantiateViewController(withIdentifier: "KhachHangMainMenu") as! KhachHangMainMenu
+        present(scr, animated: true, completion: nil)
+    }
 }
