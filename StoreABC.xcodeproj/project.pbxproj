@@ -17,7 +17,6 @@
 		F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */; };
 		F3594962282D582900545B61 /* ThongTinCaNhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3594961282D582900545B61 /* ThongTinCaNhan.swift */; };
 		F3594966282DED5D00545B61 /* ThemSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3594965282DED5D00545B61 /* ThemSanPham.swift */; };
-		F35B99C6282386230055957D /* PhanLoaiSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B99C5282386230055957D /* PhanLoaiSanPham.swift */; };
 		F35B9A712823D0390055957D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F35B9A702823D0390055957D /* GoogleService-Info.plist */; };
 		F36599BC280FEDDA00B759E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36599BB280FEDDA00B759E8 /* Assets.xcassets */; };
 		F3D6E5F7282CFE1E00AAAA1B /* DangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E5F6282CFE1D00AAAA1B /* DangNhap.swift */; };
@@ -27,6 +26,10 @@
 		F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */; };
 		F3E954F9282F44DB00E0468E /* ThongTinSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E954F8282F44DB00E0468E /* ThongTinSanPham.swift */; };
 		F3FF44F22833FF7A004181AF /* ChiTietSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF44F12833FF7A004181AF /* ChiTietSanPham.swift */; };
+		F3FF45262834DEE3004181AF /* SanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF45252834DEE3004181AF /* SanPham.swift */; };
+		F3FF453A2835D5C0004181AF /* TatCaSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF45392835D5C0004181AF /* TatCaSanPham.swift */; };
+		F3FF45632835FF28004181AF /* SanPhamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF45622835FF28004181AF /* SanPhamCell.swift */; };
+		F3FF456D2836BA22004181AF /* SanPhamNSXCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF456C2836BA22004181AF /* SanPhamNSXCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +61,6 @@
 		F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangKiTaiKhoan.swift; sourceTree = "<group>"; };
 		F3594961282D582900545B61 /* ThongTinCaNhan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinCaNhan.swift; sourceTree = "<group>"; };
 		F3594965282DED5D00545B61 /* ThemSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemSanPham.swift; sourceTree = "<group>"; };
-		F35B99C5282386230055957D /* PhanLoaiSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhanLoaiSanPham.swift; sourceTree = "<group>"; };
 		F35B9A702823D0390055957D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Volumes/E - 50 GB/ios/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F36599BB280FEDDA00B759E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		F3D6E5F6282CFE1D00AAAA1B /* DangNhap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangNhap.swift; sourceTree = "<group>"; };
@@ -68,6 +70,10 @@
 		F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhachHangMainMenu.swift; sourceTree = "<group>"; };
 		F3E954F8282F44DB00E0468E /* ThongTinSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinSanPham.swift; sourceTree = "<group>"; };
 		F3FF44F12833FF7A004181AF /* ChiTietSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiTietSanPham.swift; sourceTree = "<group>"; };
+		F3FF45252834DEE3004181AF /* SanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPham.swift; sourceTree = "<group>"; };
+		F3FF45392835D5C0004181AF /* TatCaSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TatCaSanPham.swift; sourceTree = "<group>"; };
+		F3FF45622835FF28004181AF /* SanPhamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPhamCell.swift; sourceTree = "<group>"; };
+		F3FF456C2836BA22004181AF /* SanPhamNSXCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPhamNSXCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +139,6 @@
 				660623AC280FD457003E2631 /* Main.storyboard */,
 				660623B1280FD459003E2631 /* LaunchScreen.storyboard */,
 				660623B4280FD459003E2631 /* Info.plist */,
-				F35B99C5282386230055957D /* PhanLoaiSanPham.swift */,
 			);
 			path = StoreABC;
 			sourceTree = "<group>";
@@ -167,6 +172,9 @@
 				F3594965282DED5D00545B61 /* ThemSanPham.swift */,
 				F3E954F8282F44DB00E0468E /* ThongTinSanPham.swift */,
 				F3FF44F12833FF7A004181AF /* ChiTietSanPham.swift */,
+				F3FF45392835D5C0004181AF /* TatCaSanPham.swift */,
+				F3FF45622835FF28004181AF /* SanPhamCell.swift */,
+				F3FF456C2836BA22004181AF /* SanPhamNSXCell.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 			children = (
 				F3D6E5FB282D0C7300AAAA1B /* Account.swift */,
 				F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */,
+				F3FF45252834DEE3004181AF /* SanPham.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -351,14 +360,17 @@
 			files = (
 				F3D6E5F7282CFE1E00AAAA1B /* DangNhap.swift in Sources */,
 				F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */,
+				F3FF453A2835D5C0004181AF /* TatCaSanPham.swift in Sources */,
 				F3D6E60A282D129900AAAA1B /* AdminMainMenu.swift in Sources */,
+				F3FF45632835FF28004181AF /* SanPhamCell.swift in Sources */,
 				F3E954F9282F44DB00E0468E /* ThongTinSanPham.swift in Sources */,
 				F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */,
+				F3FF456D2836BA22004181AF /* SanPhamNSXCell.swift in Sources */,
 				F3FF44F22833FF7A004181AF /* ChiTietSanPham.swift in Sources */,
 				F3D6E602282D0F4400AAAA1B /* ThongTinDangNhap.swift in Sources */,
-				F35B99C6282386230055957D /* PhanLoaiSanPham.swift in Sources */,
 				660623AB280FD457003E2631 /* ViewController.swift in Sources */,
 				660623A9280FD457003E2631 /* AppDelegate.swift in Sources */,
+				F3FF45262834DEE3004181AF /* SanPham.swift in Sources */,
 				F3594966282DED5D00545B61 /* ThemSanPham.swift in Sources */,
 				F3D6E5FC282D0C7300AAAA1B /* Account.swift in Sources */,
 				F3594962282D582900545B61 /* ThongTinCaNhan.swift in Sources */,

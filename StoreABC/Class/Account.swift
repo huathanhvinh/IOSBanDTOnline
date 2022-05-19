@@ -9,11 +9,13 @@
 import UIKit
 
 class Account {
+    var ID: String
     var TaiKhoan: String
     var MatKhau: String
     var PhanLoai: Int
     
-    init(TaiKhoan:String,MatKhau:String,PhanLoai:Int) {
+    init(ID: String,TaiKhoan:String,MatKhau:String,PhanLoai:Int) {
+        self.ID = ID
         self.TaiKhoan = TaiKhoan
         self.MatKhau = MatKhau
         self.PhanLoai = PhanLoai

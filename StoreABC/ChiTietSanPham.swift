@@ -24,7 +24,7 @@ class ChiTietSanPham: UIViewController {
     @IBOutlet weak var img3: UIButton!
     @IBOutlet weak var img4: UIButton!
     
-    var idSanPham = "-N2-QdxfJp5SZzZXDYtS"
+    var idSanPham = "-N2KW2oEaLdAaBQRANsw"
     var data2:Data!
     var data3:Data!
     var data4:Data!
@@ -87,15 +87,15 @@ class ChiTietSanPham: UIViewController {
         })
         
     }
-    //MARK:ĐỔi hình 1
+    //MARK:Đổi hình 1
     @IBAction func DoiHinh1(_ sender: UIButton) {
         img1.image = UIImage(data: data2)
     }
-    //MARK:ĐỔi hình 2
+    //MARK:Đổi hình 2
     @IBAction func DoiHinh2(_ sender: UIButton) {
         img1.image = UIImage(data: data3)
     }
-    //MARK:ĐỔi hình 3
+    //MARK:Đổi hình 3
     @IBAction func DoiHinh3(_ sender: UIButton) {
         img1.image = UIImage(data: data4)
     }

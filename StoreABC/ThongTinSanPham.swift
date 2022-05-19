@@ -25,7 +25,7 @@ class ThongTinSanPham: UIViewController,UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var tfRom: UITextField!
     @IBOutlet weak var tfPin: UITextField!
     @IBOutlet weak var tfGiaBan: UITextField!
-    var idSanPham = "-N2-QdxfJp5SZzZXDYtS"
+    var idSanPham = "-N2KW2oEaLdAaBQRANsw"
     var selectImage = 0
     //MARK: Main
     override func viewDidLoad() {
@@ -213,6 +213,57 @@ class ThongTinSanPham: UIViewController,UIImagePickerControllerDelegate, UINavig
     
     //MARK: Nút Lưu Sản Phẩm
     @IBAction func btnLuuSanPham(_ sender: Any) {
+        let ref = Database.database().reference()
+        //MARK: Convert ảnh sang Base 64
+        let imgData1 = imageView1.image?.pngData()!
+        let imgConvert1 = imgData1!.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+        // 2
+        let imgData2 = imageView2.image?.pngData()!
+        let imgConvert2 = imgData2!.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+        // 3
+        let imgData3 = imageView3.image?.pngData()!
+        let imgConvert3 = imgData3!.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+        // 4
+        let imgData4 = imageView4.image?.pngData()!
+        let imgConvert4 = imgData4!.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+        
+        //MARK: thêm thông tin vào firebase
+        let object : [String : Any] = [
+            "ID" : idSanPham,
+            "HSX" : tfHSX.text ?? "",
+            "TenSanPham" : tfTenSanPham.text ?? "",
+            "ManHinh" : tfManHinh.text ?? "",
+            "HDH" : tfHDH.text ?? "",
+            "CamSau" : tfCamSau.text ?? "",
+            "Ram" : tfRam.text ?? "",
+            "Rom" : tfRom.text ?? "",
+            "Pin" : tfPin.text ?? "",
+            "Gia" : tfGiaBan.text ?? "",
+            "Anh1" : imgConvert1,
+            "Anh2" : imgConvert2,
+            "Anh3" : imgConvert3,
+            "Anh4" : imgConvert4,
+            
+        ]
+        ref.child("DanhSachSanPham").child(idSanPham).setValue(object)
+        //MARK: Thông báo lưu thành công
+        let alert = UIAlertController(title: "Thông Báo", message: "Lưu Thành Công", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            default:
+                break
+                
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
