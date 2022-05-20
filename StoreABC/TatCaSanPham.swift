@@ -10,6 +10,7 @@ import UIKit
 import FirebaseDatabase
 
 var idSanPham:String = ""
+
 class TatCaSanPham: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var tfTimKiem: UITextField!

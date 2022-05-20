@@ -9,8 +9,8 @@
 import FirebaseDatabase
 import UIKit
 
-class ViewController:UIViewController, UITableViewDataSource {
-    
+class ViewController:UIViewController, UITableViewDataSource,UITableViewDelegate {
+    //MARK: Khai Báo table View
     @IBOutlet weak var listSanPham: UITableView!{
         didSet{
             listSanPham.dataSource = self
@@ -21,6 +21,8 @@ class ViewController:UIViewController, UITableViewDataSource {
     var DanhSachSanPham = [SanPham]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        listSanPham.delegate = self
+        //MARK: Load trang chủ (Mặc định là sản phẩm của Iphone)
         let ref = Database.database().reference()
         ref.child("DanhSachSanPham").observe(.value, with: {(snapshot) in
             if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
@@ -52,7 +54,7 @@ class ViewController:UIViewController, UITableViewDataSource {
         })
         
     }
-    //MARK: Phân loại Sản Phẩm
+    //MARK: Phân loại Sản Phẩm - Iphone
     @IBAction func btnApple(_ sender: UIButton) {
         DanhSachSanPham.removeAll()
         listSanPham.reloadData()
@@ -87,7 +89,7 @@ class ViewController:UIViewController, UITableViewDataSource {
         })
         
     }
-
+    //MARK: Phân loại Sản Phẩm - Vivo
     @IBAction func btnXiaomi(_ sender: UIButton) {
         DanhSachSanPham.removeAll()
         listSanPham.reloadData()
@@ -121,7 +123,7 @@ class ViewController:UIViewController, UITableViewDataSource {
             }
         })
     }
-    
+    //MARK: Phân loại Sản Phẩm - Samsung
     @IBAction func btnSamSung(_ sender: UIButton) {
         DanhSachSanPham.removeAll()
         listSanPham.reloadData()
@@ -155,7 +157,7 @@ class ViewController:UIViewController, UITableViewDataSource {
             }
         })
     }
-    
+    //MARK: Phân loại Sản Phẩm - Oppo
     @IBAction func btnOppo(_ sender: UIButton) {
         DanhSachSanPham.removeAll()
         listSanPham.reloadData()
@@ -189,7 +191,7 @@ class ViewController:UIViewController, UITableViewDataSource {
             }
         })
     }
-    
+    //MARK: Phân loại Sản Phẩm - Tất cả sản phẩm
     @IBAction func btnAll(_ sender: UIButton) {
         DanhSachSanPham.removeAll()
         listSanPham.reloadData()
@@ -233,8 +235,47 @@ class ViewController:UIViewController, UITableViewDataSource {
         
         return cell
     }
-    //MARK: Phân loại trang
-    
+    //MARK: Chuyển đến trang chi tiết sản phẩm
+    //MARK: hàm onclick tabble cell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sanPham = DanhSachSanPham[indexPath.row]
+        idSanPham = sanPham.ID
+        let scr = storyboard?.instantiateViewController(withIdentifier: "ManHinhChiTietSanPham") as! ChiTietSanPham
+        present(scr, animated: true, completion: nil)
+    }
+    //MARK: Button Home
+    //MARK: Button Giỏ Hàng
+    @IBAction func btnGioHang(_ sender: UIButton) {
+        if(ThongTinDangNhap.taiKhoan == ""){
+            let alert = UIAlertController(title: "Thông Báo", message: "Bạn cần phải đăng nhập !", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                    
+                default:
+                    break
+                    
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            DiDenGioHang()
+        }
+        
+    }
+    //MARK: Button Thông Tin Cá Nhân - Kéo thả màn hình
+    //MARK: func Chuyển màn hình đến Giỏ Hàng
+    func DiDenGioHang(){
+        let scr = storyboard?.instantiateViewController(withIdentifier: "ManHinhGioHang") as! GioHang
+        present(scr, animated: true, completion: nil)
+    }
 }
 
 

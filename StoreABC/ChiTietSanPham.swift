@@ -23,6 +23,7 @@ class ChiTietSanPham: UIViewController {
     @IBOutlet weak var img2: UIButton!
     @IBOutlet weak var img3: UIButton!
     @IBOutlet weak var img4: UIButton!
+    @IBOutlet weak var tfSoLuongMua: UITextField!
     
     var id = idSanPham
     var data2:Data!
@@ -61,15 +62,15 @@ class ChiTietSanPham: UIViewController {
                         //ảnh 2
                         self.data2 = Data(base64Encoded: Anh2,
                                           options: Data.Base64DecodingOptions.ignoreUnknownCharacters)!
-                        self.img2.setBackgroundImage(UIImage(data: self.data2 as! Data), for: .normal)
+                        self.img2.setBackgroundImage(UIImage(data: self.data2!), for: .normal)
                         //ảnh 3
                         self.data3 = Data(base64Encoded: Anh3,
                                           options: Data.Base64DecodingOptions.ignoreUnknownCharacters)!
-                        self.img3.setBackgroundImage(UIImage(data: self.data3 as! Data), for: .normal)
+                        self.img3.setBackgroundImage(UIImage(data: self.data3!), for: .normal)
                         //ảnh 4
                         self.data4 = Data(base64Encoded: Anh4,
                                           options: Data.Base64DecodingOptions.ignoreUnknownCharacters)!
-                        self.img4.setBackgroundImage(UIImage(data: self.data4 as! Data), for: .normal)
+                        self.img4.setBackgroundImage(UIImage(data: self.data4!), for: .normal)
                         //thuộc tính khác
                         self.lbTenSP.text = TenSanPham
                         self.lbHSX.text = HSX
@@ -100,4 +101,60 @@ class ChiTietSanPham: UIViewController {
         img1.image = UIImage(data: data4)
     }
     //MARK: Thêm Vào Giỏ Hàng
+    @IBAction func btnThemVaoGioHang(_ sender: Any) {
+        if(ThongTinDangNhap.taiKhoan == ""){
+            let alert = UIAlertController(title: "Thông Báo", message: "Bạn cần phải đăng nhập !", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                    
+                default:
+                    break
+                    
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            let gia = Int(lbGiaCa.text!)
+            let soLuong = Int(tfSoLuongMua.text!)
+            let ThanhTien = gia!*soLuong!
+            //MARK: Thêm vào firebase
+            let ref = Database.database().reference()
+            let idGioHang:String = ref.child("GioHang").childByAutoId().key ?? "Lỗi"
+            let object : [String : Any] = [
+                "TaiKhoan" : ThongTinDangNhap.taiKhoan,
+                "maSanPham" : idSanPham,
+                "soLuong" : soLuong as Any,
+                "thanhTien" : ThanhTien,
+                "ID" : idGioHang,
+                ]
+            //MARK: thông báo thêm vào giỏ hàng thành công
+            ref.child("GioHang").child(idGioHang).setValue(object)
+            let alert = UIAlertController(title: "Thông Báo", message: "Thêm thành công !", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                    
+                default:
+                    break
+                    
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }

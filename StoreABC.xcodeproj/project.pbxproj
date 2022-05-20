@@ -14,11 +14,14 @@
 		660623AE280FD457003E2631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660623AC280FD457003E2631 /* Main.storyboard */; };
 		660623B3280FD459003E2631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660623B1280FD459003E2631 /* LaunchScreen.storyboard */; };
 		660623BE280FD45A003E2631 /* StoreABCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660623BD280FD45A003E2631 /* StoreABCTests.swift */; };
+		F33F42C72837FBC400BC1F6F /* SanPhamGioHangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F42C62837FBC400BC1F6F /* SanPhamGioHangCell.swift */; };
 		F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */; };
 		F3594962282D582900545B61 /* ThongTinCaNhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3594961282D582900545B61 /* ThongTinCaNhan.swift */; };
 		F3594966282DED5D00545B61 /* ThemSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3594965282DED5D00545B61 /* ThemSanPham.swift */; };
 		F35B9A712823D0390055957D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F35B9A702823D0390055957D /* GoogleService-Info.plist */; };
 		F36599BC280FEDDA00B759E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36599BB280FEDDA00B759E8 /* Assets.xcassets */; };
+		F3A0E29128378CAB002E0861 /* GioHang.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0E29028378CAB002E0861 /* GioHang.swift */; };
+		F3A0E29B2837A075002E0861 /* dsGioHang.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0E29A2837A075002E0861 /* dsGioHang.swift */; };
 		F3D6E5F7282CFE1E00AAAA1B /* DangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E5F6282CFE1D00AAAA1B /* DangNhap.swift */; };
 		F3D6E5FC282D0C7300AAAA1B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E5FB282D0C7300AAAA1B /* Account.swift */; };
 		F3D6E602282D0F4400AAAA1B /* ThongTinDangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */; };
@@ -58,11 +61,14 @@
 		660623BF280FD45A003E2631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B1EEC735D183D8B546F4DF9 /* Pods_StoreABCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreABCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		839C000E7E5C5A098F60EC5A /* Pods_StoreABC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreABC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33F42C62837FBC400BC1F6F /* SanPhamGioHangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPhamGioHangCell.swift; sourceTree = "<group>"; };
 		F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangKiTaiKhoan.swift; sourceTree = "<group>"; };
 		F3594961282D582900545B61 /* ThongTinCaNhan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinCaNhan.swift; sourceTree = "<group>"; };
 		F3594965282DED5D00545B61 /* ThemSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemSanPham.swift; sourceTree = "<group>"; };
 		F35B9A702823D0390055957D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Volumes/E - 50 GB/ios/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F36599BB280FEDDA00B759E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		F3A0E29028378CAB002E0861 /* GioHang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GioHang.swift; sourceTree = "<group>"; };
+		F3A0E29A2837A075002E0861 /* dsGioHang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dsGioHang.swift; sourceTree = "<group>"; };
 		F3D6E5F6282CFE1D00AAAA1B /* DangNhap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangNhap.swift; sourceTree = "<group>"; };
 		F3D6E5FB282D0C7300AAAA1B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinDangNhap.swift; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 				F3FF45392835D5C0004181AF /* TatCaSanPham.swift */,
 				F3FF45622835FF28004181AF /* SanPhamCell.swift */,
 				F3FF456C2836BA22004181AF /* SanPhamNSXCell.swift */,
+				F3A0E29028378CAB002E0861 /* GioHang.swift */,
+				F33F42C62837FBC400BC1F6F /* SanPhamGioHangCell.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 				F3D6E5FB282D0C7300AAAA1B /* Account.swift */,
 				F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */,
 				F3FF45252834DEE3004181AF /* SanPham.swift */,
+				F3A0E29A2837A075002E0861 /* dsGioHang.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -362,15 +371,18 @@
 				F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */,
 				F3FF453A2835D5C0004181AF /* TatCaSanPham.swift in Sources */,
 				F3D6E60A282D129900AAAA1B /* AdminMainMenu.swift in Sources */,
+				F3A0E29B2837A075002E0861 /* dsGioHang.swift in Sources */,
 				F3FF45632835FF28004181AF /* SanPhamCell.swift in Sources */,
 				F3E954F9282F44DB00E0468E /* ThongTinSanPham.swift in Sources */,
 				F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */,
 				F3FF456D2836BA22004181AF /* SanPhamNSXCell.swift in Sources */,
 				F3FF44F22833FF7A004181AF /* ChiTietSanPham.swift in Sources */,
+				F33F42C72837FBC400BC1F6F /* SanPhamGioHangCell.swift in Sources */,
 				F3D6E602282D0F4400AAAA1B /* ThongTinDangNhap.swift in Sources */,
 				660623AB280FD457003E2631 /* ViewController.swift in Sources */,
 				660623A9280FD457003E2631 /* AppDelegate.swift in Sources */,
 				F3FF45262834DEE3004181AF /* SanPham.swift in Sources */,
+				F3A0E29128378CAB002E0861 /* GioHang.swift in Sources */,
 				F3594966282DED5D00545B61 /* ThemSanPham.swift in Sources */,
 				F3D6E5FC282D0C7300AAAA1B /* Account.swift in Sources */,
 				F3594962282D582900545B61 /* ThongTinCaNhan.swift in Sources */,

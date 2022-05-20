@@ -197,7 +197,7 @@ class ThongTinSanPham: UIViewController,UIImagePickerControllerDelegate, UINavig
                     }
                 }))
                 self.present(alert, animated: true, completion: nil)
-                //MARK: Code Chuyển màn hình tại đây !!!
+                //MARK: Code Chuyển màn hình tại đây !!! danh sách sản phẩm - admin
             case .cancel:
                 print("cancel")
                 
