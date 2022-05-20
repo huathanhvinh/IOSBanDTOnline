@@ -24,7 +24,7 @@ class ChiTietSanPham: UIViewController {
     @IBOutlet weak var img3: UIButton!
     @IBOutlet weak var img4: UIButton!
     
-    var idSanPham = "-N2KW2oEaLdAaBQRANsw"
+    var id = idSanPham
     var data2:Data!
     var data3:Data!
     var data4:Data!
@@ -49,7 +49,7 @@ class ChiTietSanPham: UIViewController {
                     let Ram:String = oSnap.childSnapshot(forPath: "Ram").value as? String ?? ""
                     let Rom:String = oSnap.childSnapshot(forPath: "Rom").value as? String ?? ""
                     let TenSanPham:String = oSnap.childSnapshot(forPath: "TenSanPham").value as? String ?? ""
-                    if(ID == self.idSanPham)
+                    if(ID == self.id)
                     {
                         //ảnh 1
                         let data1 = Data(base64Encoded: Anh1,
