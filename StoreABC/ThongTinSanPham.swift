@@ -25,7 +25,7 @@ class ThongTinSanPham: UIViewController,UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var tfRom: UITextField!
     @IBOutlet weak var tfPin: UITextField!
     @IBOutlet weak var tfGiaBan: UITextField!
-    var idSanPham = "-N2KW2oEaLdAaBQRANsw"
+    var idSanPham = idSanPhamAD
     var selectImage = 0
     //MARK: Main
     override func viewDidLoad() {
@@ -184,6 +184,8 @@ class ThongTinSanPham: UIViewController,UIImagePickerControllerDelegate, UINavig
                 alert.addAction(UIAlertAction(title: "OKE", style: .default, handler: { action in
                     switch action.style{
                     case .default:
+                        //MARK: Code Chuyển màn hình tại đây !!! danh sách sản phẩm - admin ManHinhDanhSachSanPham
+                        self.chuyenManHinh()
                         print("default")
                         
                     case .cancel:
@@ -197,7 +199,6 @@ class ThongTinSanPham: UIViewController,UIImagePickerControllerDelegate, UINavig
                     }
                 }))
                 self.present(alert, animated: true, completion: nil)
-                //MARK: Code Chuyển màn hình tại đây !!! danh sách sản phẩm - admin
             case .cancel:
                 print("cancel")
                 
@@ -264,6 +265,11 @@ class ThongTinSanPham: UIViewController,UIImagePickerControllerDelegate, UINavig
             }
         }))
         self.present(alert, animated: true, completion: nil)
+    }
+    //MARK: Func chuyển màn hình sau khi xóa
+    func chuyenManHinh(){
+        let scr = storyboard?.instantiateViewController(withIdentifier: "ManHinhDanhSachSanPham") as! DanhSachSanPham
+        present(scr, animated: true, completion: nil)
     }
     
 }

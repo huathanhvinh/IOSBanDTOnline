@@ -10,9 +10,9 @@ import UIKit
 import FirebaseDatabase
 
 class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    @IBOutlet weak var listSanPham: UITableView!{
+    @IBOutlet weak var listSanPhamGioHang: UITableView!{
         didSet{
-            listSanPham.dataSource = self
+            listSanPhamGioHang.dataSource = self
         }
     }
     @IBOutlet weak var lbTaiKhoan: UILabel!
@@ -41,16 +41,76 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
                         TongTien = TongTien + thanhTien
                         self.DanhSachSanPham.append(dsGiohang)
                         let indexPath = IndexPath(row: self.DanhSachSanPham.count - 1, section: 0)
-                        self.listSanPham.insertRows(at: [indexPath], with: .automatic)
+                        self.listSanPhamGioHang.insertRows(at: [indexPath], with: .automatic)
                     }
                     self.lbTongTien.text = "Tổng tiền: \(TongTien) VNĐ"
                 }
             }
         })
     }
+    
     //MARK: Nút xóa tất cả
     @IBAction func btnXoaTatCa(_ sender: Any) {
-        
+        let alert = UIAlertController(title: "Thông Báo", message: "Bạn có muốn xóa không ?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Không", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            default:
+                break
+                
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "Có", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                //xóa danh sách sản phẩm
+                let ref = Database.database().reference()
+                ref.child("GioHang").observe(.value, with: {(snapshot) in
+                    if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                        for oSnap in oSnapshot {
+                            //let ID:String = oSnap.childSnapshot(forPath: "ID").value as? String ?? ""
+                            let TaiKhoan:String = oSnap.childSnapshot(forPath: "TaiKhoan").value as? String ?? ""
+                            if(TaiKhoan == ThongTinDangNhap.taiKhoan){
+//                                ref.child("GioHang").remo
+                            }
+                        }
+                    }
+                })
+                //thông báo & reload lại dữ liệu
+                let alert = UIAlertController(title: "Thông Báo", message: "Xóa thành công", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: { action in
+                    switch action.style{
+                    case .default:
+                        self.DanhSachSanPham.removeAll()
+                        self.listSanPhamGioHang.reloadData()
+                    case .cancel:
+                        print("cancel")
+                        
+                    case .destructive:
+                        print("destructive")
+                    default:
+                        break
+                        
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            default:
+                break
+                
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     //MARK: Nút Đặt Hàng
     @IBAction func btnDatHang(_ sender: Any) {
@@ -61,7 +121,7 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DanhSachSanPham.count
     }
-    
+    //get cells
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sanPham = DanhSachSanPham[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "SanPhamGioHangCell") as! SanPhamGioHangCell

@@ -27,6 +27,9 @@
 		F3D6E602282D0F4400AAAA1B /* ThongTinDangNhap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */; };
 		F3D6E60A282D129900AAAA1B /* AdminMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E609282D129900AAAA1B /* AdminMainMenu.swift */; };
 		F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */; };
+		F3D8268D283D20B4004B5DB5 /* DanhSachSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8268C283D20B4004B5DB5 /* DanhSachSanPham.swift */; };
+		F3D82691283D21EC004B5DB5 /* SanPhamCellAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D82690283D21EC004B5DB5 /* SanPhamCellAD.swift */; };
+		F3D82695283D301D004B5DB5 /* DoiMatKhau.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D82694283D301D004B5DB5 /* DoiMatKhau.swift */; };
 		F3E954F9282F44DB00E0468E /* ThongTinSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E954F8282F44DB00E0468E /* ThongTinSanPham.swift */; };
 		F3FF44F22833FF7A004181AF /* ChiTietSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF44F12833FF7A004181AF /* ChiTietSanPham.swift */; };
 		F3FF45262834DEE3004181AF /* SanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF45252834DEE3004181AF /* SanPham.swift */; };
@@ -74,6 +77,9 @@
 		F3D6E601282D0F4400AAAA1B /* ThongTinDangNhap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinDangNhap.swift; sourceTree = "<group>"; };
 		F3D6E609282D129900AAAA1B /* AdminMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainMenu.swift; sourceTree = "<group>"; };
 		F3D6E60F282D12AD00AAAA1B /* KhachHangMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhachHangMainMenu.swift; sourceTree = "<group>"; };
+		F3D8268C283D20B4004B5DB5 /* DanhSachSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanhSachSanPham.swift; sourceTree = "<group>"; };
+		F3D82690283D21EC004B5DB5 /* SanPhamCellAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPhamCellAD.swift; sourceTree = "<group>"; };
+		F3D82694283D301D004B5DB5 /* DoiMatKhau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoiMatKhau.swift; sourceTree = "<group>"; };
 		F3E954F8282F44DB00E0468E /* ThongTinSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinSanPham.swift; sourceTree = "<group>"; };
 		F3FF44F12833FF7A004181AF /* ChiTietSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiTietSanPham.swift; sourceTree = "<group>"; };
 		F3FF45252834DEE3004181AF /* SanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPham.swift; sourceTree = "<group>"; };
@@ -183,6 +189,9 @@
 				F3FF456C2836BA22004181AF /* SanPhamNSXCell.swift */,
 				F3A0E29028378CAB002E0861 /* GioHang.swift */,
 				F33F42C62837FBC400BC1F6F /* SanPhamGioHangCell.swift */,
+				F3D8268C283D20B4004B5DB5 /* DanhSachSanPham.swift */,
+				F3D82690283D21EC004B5DB5 /* SanPhamCellAD.swift */,
+				F3D82694283D301D004B5DB5 /* DoiMatKhau.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -367,14 +376,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D82695283D301D004B5DB5 /* DoiMatKhau.swift in Sources */,
 				F3D6E5F7282CFE1E00AAAA1B /* DangNhap.swift in Sources */,
 				F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */,
 				F3FF453A2835D5C0004181AF /* TatCaSanPham.swift in Sources */,
 				F3D6E60A282D129900AAAA1B /* AdminMainMenu.swift in Sources */,
 				F3A0E29B2837A075002E0861 /* dsGioHang.swift in Sources */,
 				F3FF45632835FF28004181AF /* SanPhamCell.swift in Sources */,
+				F3D8268D283D20B4004B5DB5 /* DanhSachSanPham.swift in Sources */,
 				F3E954F9282F44DB00E0468E /* ThongTinSanPham.swift in Sources */,
 				F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */,
+				F3D82691283D21EC004B5DB5 /* SanPhamCellAD.swift in Sources */,
 				F3FF456D2836BA22004181AF /* SanPhamNSXCell.swift in Sources */,
 				F3FF44F22833FF7A004181AF /* ChiTietSanPham.swift in Sources */,
 				F33F42C72837FBC400BC1F6F /* SanPhamGioHangCell.swift in Sources */,
