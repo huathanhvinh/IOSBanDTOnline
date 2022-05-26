@@ -16,6 +16,7 @@
 		660623BE280FD45A003E2631 /* StoreABCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660623BD280FD45A003E2631 /* StoreABCTests.swift */; };
 		F33F42C72837FBC400BC1F6F /* SanPhamGioHangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F42C62837FBC400BC1F6F /* SanPhamGioHangCell.swift */; };
 		F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */; };
+		F357FEBF284002C1006FC6B4 /* ThongBaoAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357FEBE284002C1006FC6B4 /* ThongBaoAdmin.swift */; };
 		F3594962282D582900545B61 /* ThongTinCaNhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3594961282D582900545B61 /* ThongTinCaNhan.swift */; };
 		F3594966282DED5D00545B61 /* ThemSanPham.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3594965282DED5D00545B61 /* ThemSanPham.swift */; };
 		F35B9A712823D0390055957D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F35B9A702823D0390055957D /* GoogleService-Info.plist */; };
@@ -66,6 +67,7 @@
 		839C000E7E5C5A098F60EC5A /* Pods_StoreABC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreABC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33F42C62837FBC400BC1F6F /* SanPhamGioHangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPhamGioHangCell.swift; sourceTree = "<group>"; };
 		F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangKiTaiKhoan.swift; sourceTree = "<group>"; };
+		F357FEBE284002C1006FC6B4 /* ThongBaoAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongBaoAdmin.swift; sourceTree = "<group>"; };
 		F3594961282D582900545B61 /* ThongTinCaNhan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongTinCaNhan.swift; sourceTree = "<group>"; };
 		F3594965282DED5D00545B61 /* ThemSanPham.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemSanPham.swift; sourceTree = "<group>"; };
 		F35B9A702823D0390055957D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Volumes/E - 50 GB/ios/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				F3D8268C283D20B4004B5DB5 /* DanhSachSanPham.swift */,
 				F3D82690283D21EC004B5DB5 /* SanPhamCellAD.swift */,
 				F3D82694283D301D004B5DB5 /* DoiMatKhau.swift */,
+				F357FEBE284002C1006FC6B4 /* ThongBaoAdmin.swift */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				F3FF45262834DEE3004181AF /* SanPham.swift in Sources */,
 				F3A0E29128378CAB002E0861 /* GioHang.swift in Sources */,
 				F3594966282DED5D00545B61 /* ThemSanPham.swift in Sources */,
+				F357FEBF284002C1006FC6B4 /* ThongBaoAdmin.swift in Sources */,
 				F3D6E5FC282D0C7300AAAA1B /* Account.swift in Sources */,
 				F3594962282D582900545B61 /* ThongTinCaNhan.swift in Sources */,
 			);

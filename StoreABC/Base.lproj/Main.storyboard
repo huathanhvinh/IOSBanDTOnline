@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Njf-qh-iVs" kind="relationship" relationship="rootViewController" id="opr-aQ-ihG"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZLL-zh-fpf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h97-H9-FJ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -634,7 +634,7 @@
                                     <color key="titleShadowColor" systemColor="linkColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pbs-JD-Vqu" kind="show" id="avV-Yo-Rlz"/>
+                                    <segue destination="pbs-JD-Vqu" kind="show" id="eDB-T3-SXJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXR-MX-Zgj">
@@ -650,21 +650,8 @@
                                     <segue destination="wqd-S9-bET" kind="show" id="gqE-yO-49I"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehl-lN-Fqf">
-                                <rect key="frame" x="71" y="426" width="272" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Xem danh sách khách hàng">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" systemColor="linkColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="uwn-NY-GWl" kind="show" id="QOo-Fj-Ynm"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COB-0h-MOz">
-                                <rect key="frame" x="71" y="491" width="272" height="36"/>
+                                <rect key="frame" x="71" y="424" width="272" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -677,7 +664,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtM-4V-y73">
-                                <rect key="frame" x="71" y="553" width="272" height="36"/>
+                                <rect key="frame" x="71" y="486" width="272" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -685,6 +672,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="linkColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="nTX-oq-DXH" kind="show" id="8dY-sb-gLH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROa-I8-Yjq">
                                 <rect key="frame" x="71" y="775" width="272" height="36"/>
@@ -695,9 +685,12 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="linkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnDangXuat:" destination="4KV-Ta-WR9" eventType="touchUpInside" id="eI5-1N-Ln3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVg-nt-NA5">
-                                <rect key="frame" x="71" y="612" width="272" height="36"/>
+                                <rect key="frame" x="71" y="545" width="272" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -705,58 +698,88 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="linkColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="n0i-ht-V6x" kind="show" id="GzE-Sy-dnt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pds-O4-R6e">
                                 <rect key="frame" x="162" y="75" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="img5"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6K-cr-gkV">
+                                <rect key="frame" x="71" y="610" width="272" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Đổi Mật Khẩu">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lRI-Pg-VMv" kind="show" id="hdx-lC-AEg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nNx-8S-c1q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="NsB-D6-bab"/>
+                    <connections>
+                        <outlet property="btnThongBao" destination="uad-8C-48U" id="qQQ-sN-uvI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJx-h7-Tbk" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-271.01449275362319" y="-614.73214285714278"/>
         </scene>
-        <!--Lập Hóa Đơn-->
-        <scene sceneID="amn-mC-c7a">
-            <objects>
-                <viewController id="xP9-mu-CU3" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="76r-3Q-ySa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8w6-gz-Ztb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Lập Hóa Đơn" id="Mj9-1u-aTs"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bsE-Ty-fSV" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="419" y="-615"/>
-        </scene>
         <!--Thông Báo-->
         <scene sceneID="mcP-7r-v0p">
             <objects>
-                <viewController id="pbs-JD-Vqu" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pbs-JD-Vqu" customClass="ThongBaoAdmin" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6lS-mD-DOL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Đơn hàng chưa xử lý: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Df2-Af-eyd">
+                                <rect key="frame" x="20" y="80" width="311" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kjl-Eu-KdA">
+                                <rect key="frame" x="20" y="115" width="374" height="719"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Kgt-IJ-rjb">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kgt-IJ-rjb" id="GSs-mU-aXK">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jSV-mp-5Jw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Thông Báo" id="Tu6-AQ-FGX"/>
+                    <connections>
+                        <outlet property="lbSoLuongDonHang" destination="Df2-Af-eyd" id="S79-bt-NnA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMI-Oc-Lym" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="-615"/>
+            <point key="canvasLocation" x="1692.753623188406" y="-615.40178571428567"/>
         </scene>
         <!--Doanh số-->
         <scene sceneID="aJL-hj-12b">
             <objects>
-                <viewController id="wqd-S9-bET" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wqd-S9-bET" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HmN-Of-7Jr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -767,52 +790,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ZH-Bg-RPk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1880" y="-615"/>
-        </scene>
-        <!--Danh sách Khách hàng-->
-        <scene sceneID="BMe-eh-hIe">
-            <objects>
-                <viewController id="uwn-NY-GWl" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lPk-LJ-042">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O7H-aV-E1b">
-                                <rect key="frame" x="10" y="112" width="394" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" systemColor="systemBackgroundColor"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0t-qc-BGn">
-                                <rect key="frame" x="20" y="188" width="374" height="608"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="TBh-Ak-FYz"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="XWT-gY-g9W"/>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmH-Ff-bWu">
-                                <rect key="frame" x="142" y="832" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Thêm khách hàng"/>
-                                <connections>
-                                    <segue destination="ka5-je-3ak" kind="show" id="9lm-on-geA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Y51-rR-zFa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Danh sách Khách hàng" id="ve0-tR-Jhh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n9p-5W-Kws" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2602.898550724638" y="-615.40178571428567"/>
+            <point key="canvasLocation" x="2565" y="-615"/>
         </scene>
         <!--Danh sách hóa đơn-->
         <scene sceneID="Qgo-HY-9o9">
             <objects>
-                <viewController id="u1X-Lh-SlU" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u1X-Lh-SlU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kDm-FO-fPH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -835,9 +818,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Thêm Hóa Đơn"/>
-                                <connections>
-                                    <segue destination="xP9-mu-CU3" kind="show" id="QBi-nJ-GSM"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Og0-RE-ovl"/>
@@ -854,7 +834,7 @@
             <objects>
                 <viewController storyboardIdentifier="ManHinhDanhSachSanPham" id="nTX-oq-DXH" customClass="DanhSachSanPham" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hW1-pd-YNL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCg-6E-inD">
@@ -940,54 +920,6 @@
             </objects>
             <point key="canvasLocation" x="4063.7681159420295" y="-615.40178571428567"/>
         </scene>
-        <!--Thêm Khách hàng-->
-        <scene sceneID="fqw-Jr-omX">
-            <objects>
-                <viewController id="ka5-je-3ak" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i1b-H8-pSW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="2AI-za-hqz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Thêm Khách hàng" id="azS-BN-aWU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Tk-JI-xUG" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2603" y="-1286"/>
-        </scene>
-        <!--Thông tin khách hàng-->
-        <scene sceneID="tX1-dE-4SW">
-            <objects>
-                <viewController id="k9B-Lh-yqQ" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CfZ-b8-Sh7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="hdH-2B-fP0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Thông tin khách hàng" id="HV7-AW-6lb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ge-4k-QnH" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2603" y="-1969"/>
-        </scene>
-        <!--Thông tin khách hàng-->
-        <scene sceneID="kJU-VU-h7X">
-            <objects>
-                <viewController id="YG0-bS-7q2" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZH8-ZZ-tvy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="PGx-KH-CqA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Thông tin khách hàng" id="wnL-eF-EF0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PgR-Lu-BOE" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2603" y="-1969"/>
-        </scene>
         <!--Thông tin hóa đơn-->
         <scene sceneID="WVS-eM-J1p">
             <objects>
@@ -1002,7 +934,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66X-rc-5rx" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3348" y="-1969"/>
+            <point key="canvasLocation" x="3348" y="-1323"/>
         </scene>
         <!--Thêm sản phẩm-->
         <scene sceneID="UiA-xF-mxJ">
@@ -1224,7 +1156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWu-re-0BM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4063.7681159420295" y="-1286.3839285714284"/>
+            <point key="canvasLocation" x="4064" y="-1323"/>
         </scene>
         <!--Thông tin sản phẩm-->
         <scene sceneID="oc6-gN-Fxa">
@@ -1464,7 +1396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RAh-0f-xgk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4064" y="-1969"/>
+            <point key="canvasLocation" x="4064" y="-1998"/>
         </scene>
         <!--Khach Hang Main Menu-->
         <scene sceneID="AFj-X4-5uo">
@@ -1669,20 +1601,6 @@
             </objects>
             <point key="canvasLocation" x="-2419" y="90"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="7TO-AV-8nW">
-            <objects>
-                <navigationController id="H7T-gC-sPb" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Cze-cE-XZi"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MfS-Hc-kZg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ETo-AP-sJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1694" y="-842"/>
-        </scene>
         <!--Giỏ Hàng-->
         <scene sceneID="gSp-uP-vaL">
             <objects>
@@ -1799,22 +1717,6 @@
             </objects>
             <point key="canvasLocation" x="-3142.0289855072465" y="89.732142857142847"/>
         </scene>
-        <!--Đặt Hàng-->
-        <scene sceneID="RBK-on-TZ6">
-            <objects>
-                <viewController id="deh-Qn-76H" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nGe-Uu-5BW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="odE-eg-J0H"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Đặt Hàng" id="pFp-9e-dpt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5F3-kR-uEU" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3870" y="90"/>
-        </scene>
         <!--Lịch sữ mua hàng-->
         <scene sceneID="w9d-5E-Xwt">
             <objects>
@@ -1836,7 +1738,7 @@
             <objects>
                 <viewController id="elC-oL-q8H" customClass="TatCaSanPham" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7I1-BF-cYb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jhs-Iq-OEP">
@@ -2127,10 +2029,28 @@
             </objects>
             <point key="canvasLocation" x="1328.985507246377" y="1488.6160714285713"/>
         </scene>
+        <!--Thông Báo-->
+        <scene sceneID="LYH-gJ-P6Y">
+            <objects>
+                <viewController id="Vzp-iZ-WpI" customClass="ViewController" customModule="StoreABC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d2C-q0-4Ke">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BiT-kW-SvF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Thông Báo" id="AYI-i5-XIs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSF-3n-VkJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="-1323"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PaD-az-2Uu"/>
-        <segue reference="opr-aQ-ihG"/>
+        <segue reference="GzE-Sy-dnt"/>
+        <segue reference="j3H-f0-uCk"/>
+        <segue reference="hdx-lC-AEg"/>
+        <segue reference="6Cg-ba-CXf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="img1" width="256" height="256"/>

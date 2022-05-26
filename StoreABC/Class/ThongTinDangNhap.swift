@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ThongTinDangNhap {
-    static var taiKhoan = "phidu"
-    static var phanLoai = 2
+    static var taiKhoan = "thanhvinh"
+    static var phanLoai = 1
 }

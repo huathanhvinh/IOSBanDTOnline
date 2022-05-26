@@ -74,10 +74,10 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
                 ref.child("GioHang").observe(.value, with: {(snapshot) in
                     if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
                         for oSnap in oSnapshot {
-                            //let ID:String = oSnap.childSnapshot(forPath: "ID").value as? String ?? ""
+                            let ID:String = oSnap.childSnapshot(forPath: "ID").value as? String ?? ""
                             let TaiKhoan:String = oSnap.childSnapshot(forPath: "TaiKhoan").value as? String ?? ""
                             if(TaiKhoan == ThongTinDangNhap.taiKhoan){
-//                                ref.child("GioHang").remo
+                                ref.child("GioHang").child(ID).removeValue()
                             }
                         }
                     }
@@ -114,7 +114,91 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     //MARK: Nút Đặt Hàng
     @IBAction func btnDatHang(_ sender: Any) {
-        
+        let alert = UIAlertController(title: "Thông Báo", message: "Xác nhận đặt hàng ?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Không", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            default:
+                break
+                
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "Có", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                //thêm đơn hàng
+                let ref = Database.database().reference()
+                let idDonHang:String = ref.child("DonHang").childByAutoId().key ?? "Lỗi"
+                //MARK: thêm thông tin vào firebase
+                let object : [String : Any] = [
+                    "ID" : idDonHang,
+                    "TaiKhoan" : ThongTinDangNhap.taiKhoan,
+                    "TongTien" : self.lbTongTien.text ?? "",
+                    "TrangThai" : "False",
+                ]
+               ref.child("DonHang").child(idDonHang).setValue(object)
+                //thêm chi tiết đơn hàng
+                for i in 0..<self.DanhSachSanPham.count {
+                    let idChiTietDonHang:String = ref.child("ChiTietDonHang").childByAutoId().key ?? "Lỗi"
+                    //MARK: thêm thông tin vào firebase
+                    let object : [String : Any] = [
+                        "ID" : idChiTietDonHang,
+                        "IDDonHang" : idDonHang,
+                        "IDSanPham" : self.DanhSachSanPham[i].ID,
+                        "SoLuong" : self.DanhSachSanPham[i].soLuong,
+                        "ThanhTien" : self.lbTongTien.text ?? "",
+                    ]
+                   ref.child("ChiTietDonHang").child(idChiTietDonHang).setValue(object)
+                }
+                //xóa danh sách giỏ hàng
+                ref.child("GioHang").observe(.value, with: {(snapshot) in
+                    if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                        for oSnap in oSnapshot {
+                            let ID:String = oSnap.childSnapshot(forPath: "ID").value as? String ?? ""
+                            let TaiKhoan:String = oSnap.childSnapshot(forPath: "TaiKhoan").value as? String ?? ""
+                            if(TaiKhoan == ThongTinDangNhap.taiKhoan){
+                                ref.child("GioHang").child(ID).removeValue()
+                            }
+                        }
+                    }
+                })
+                //thông báo đặt hàng thành công
+                let alert = UIAlertController(title: "Thông Báo", message: "Đặt hàng thành công, vui lòng chờ phản hồi !!!", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: { action in
+                    switch action.style{
+                    case .default:
+                        //load lại data
+                        self.DanhSachSanPham.removeAll()
+                        self.listSanPhamGioHang.reloadData()
+                        self.lbTongTien.text = "Tổng tiền: \(0) VNĐ"
+                    case .cancel:
+                        print("cancel")
+                        
+                    case .destructive:
+                        print("destructive")
+                    default:
+                        break
+                        
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            default:
+                break
+                
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     //MARK: get cells
