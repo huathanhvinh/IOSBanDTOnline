@@ -10,6 +10,6 @@ import UIKit
 import FirebaseDatabase
 
 class ThongTinDangNhap {
-    static var taiKhoan = "thanhvinh"
-    static var phanLoai = 1
+    static var taiKhoan = "phidu"
+    static var phanLoai = 2
 }

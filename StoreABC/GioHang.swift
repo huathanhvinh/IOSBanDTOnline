@@ -43,7 +43,7 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
                         let indexPath = IndexPath(row: self.DanhSachSanPham.count - 1, section: 0)
                         self.listSanPhamGioHang.insertRows(at: [indexPath], with: .automatic)
                     }
-                    self.lbTongTien.text = "Tổng tiền: \(TongTien) VNĐ"
+                    self.lbTongTien.text = "\(TongTien)"
                 }
             }
         })
@@ -150,33 +150,33 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
                     let object : [String : Any] = [
                         "ID" : idChiTietDonHang,
                         "IDDonHang" : idDonHang,
-                        "IDSanPham" : self.DanhSachSanPham[i].ID,
+                        "IDSanPham" : self.DanhSachSanPham[i].idSanPham,
                         "SoLuong" : self.DanhSachSanPham[i].soLuong,
-                        "ThanhTien" : self.lbTongTien.text ?? "",
+                        "ThanhTien" : self.DanhSachSanPham[i].thanhTien,
                     ]
                    ref.child("ChiTietDonHang").child(idChiTietDonHang).setValue(object)
                 }
-                //xóa danh sách giỏ hàng
-                ref.child("GioHang").observe(.value, with: {(snapshot) in
-                    if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
-                        for oSnap in oSnapshot {
-                            let ID:String = oSnap.childSnapshot(forPath: "ID").value as? String ?? ""
-                            let TaiKhoan:String = oSnap.childSnapshot(forPath: "TaiKhoan").value as? String ?? ""
-                            if(TaiKhoan == ThongTinDangNhap.taiKhoan){
-                                ref.child("GioHang").child(ID).removeValue()
-                            }
-                        }
-                    }
-                })
+                self.DanhSachSanPham.removeAll()
+                self.listSanPhamGioHang.reloadData()
+                self.lbTongTien.text = "0"
                 //thông báo đặt hàng thành công
                 let alert = UIAlertController(title: "Thông Báo", message: "Đặt hàng thành công, vui lòng chờ phản hồi !!!", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: { action in
                     switch action.style{
                     case .default:
+                        //xóa danh sách giỏ hàng
+                        ref.child("GioHang").observe(.value, with: {(snapshot) in
+                            if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                                for oSnap in oSnapshot {
+                                    let ID:String = oSnap.childSnapshot(forPath: "ID").value as? String ?? ""
+                                    let TaiKhoan:String = oSnap.childSnapshot(forPath: "TaiKhoan").value as? String ?? ""
+                                    if(TaiKhoan == ThongTinDangNhap.taiKhoan){
+                                        ref.child("GioHang").child(ID).removeValue()
+                                    }
+                                }
+                            }
+                        })
                         //load lại data
-                        self.DanhSachSanPham.removeAll()
-                        self.listSanPhamGioHang.reloadData()
-                        self.lbTongTien.text = "Tổng tiền: \(0) VNĐ"
                     case .cancel:
                         print("cancel")
                         

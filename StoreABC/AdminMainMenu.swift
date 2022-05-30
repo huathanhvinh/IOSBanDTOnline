@@ -14,10 +14,10 @@ class AdminMainMenu: UIViewController {
     @IBOutlet weak var btnThongBao: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var soLuong = 0
         let ref = Database.database().reference()
         ref.child("DonHang").observe(.value, with: {(snapshot) in
             if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                var soLuong = 0
                 for oSnap in oSnapshot {
                     let TrangThai:String = oSnap.childSnapshot(forPath: "TrangThai").value as? String ?? ""
                     if(TrangThai == "False"){
@@ -27,7 +27,6 @@ class AdminMainMenu: UIViewController {
                 self.btnThongBao.setTitle("Thông Báo (\(soLuong))", for: .normal)
             }
         })
-        soLuong = 0
     }
     //MARK: Nút Đăng xuất
     @IBAction func btnDangXuat(_ sender: Any) {

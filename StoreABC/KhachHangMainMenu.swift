@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class KhachHangMainMenu: UIViewController {
-
+    @IBOutlet weak var btnThongBao: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: load thông báo
+        ThongBaoMuaHang()
         
     }
     //MARK: nút đăng xuất
@@ -60,6 +63,30 @@ class KhachHangMainMenu: UIViewController {
     }
     //MARK: func Chuyển màn hình đến màn hình trang chủ
     func DiDenTrangChu(){
+        let scr = storyboard?.instantiateViewController(withIdentifier: "ManHinhTrangChu") as! ViewController
+        present(scr, animated: true, completion: nil)
+    }
+    //MARK: thông báo mua hàng
+    func ThongBaoMuaHang() {
+        let ref = Database.database().reference()
+        ref.child("ThongBaoNguoiDung").observe(.value, with: {(snapshot) in
+            if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                for _ in oSnapshot {
+                    var soLuong = 0
+                    for oSnap in oSnapshot {
+                        let trangThai:String = oSnap.childSnapshot(forPath: "TrangThai").value as? String ?? ""
+                        let taiKhoan:String = oSnap.childSnapshot(forPath: "TaiKhoan").value as? String ?? ""
+                        if(trangThai == "False" && taiKhoan == ThongTinDangNhap.taiKhoan){
+                            soLuong = soLuong + 1
+                        }
+                    }
+                    self.btnThongBao.setTitle("Thông Báo (\(soLuong))", for: .normal)
+                }
+            }
+        })
+    }
+    //MARK: nút mua hàng
+    @IBAction func btnMuaHang(_ sender: Any) {
         let scr = storyboard?.instantiateViewController(withIdentifier: "ManHinhTrangChu") as! ViewController
         present(scr, animated: true, completion: nil)
     }

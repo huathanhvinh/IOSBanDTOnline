@@ -16,8 +16,6 @@ class ViewController:UIViewController, UITableViewDataSource,UITableViewDelegate
             listSanPham.dataSource = self
         }
     }
-    
-    
     var DanhSachSanPham = [SanPham]()
     override func viewDidLoad() {
         super.viewDidLoad()
