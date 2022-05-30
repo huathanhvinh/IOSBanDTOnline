@@ -177,6 +177,8 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
                             }
                         })
                         //load lại data
+                        self.DanhSachSanPham.removeAll()
+                        self.listSanPhamGioHang.reloadData()
                     case .cancel:
                         print("cancel")
                         

@@ -3,4 +3,208 @@
    uuid = "12F6EC38-D78D-42EB-A7B0-1E4BD4F3B4F6"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD560669-59DB-4BD2-94BC-EBB05D5CF7ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoreABC/ChiTietThongBaoUser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "DD560669-59DB-4BD2-94BC-EBB05D5CF7ED - 20ea652f77765e0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.__deallocating_deinit"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "DD560669-59DB-4BD2-94BC-EBB05D5CF7ED - ccc0859fc67b1fdd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StoreABC.ChiTietThongBaoUser"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "DD560669-59DB-4BD2-94BC-EBB05D5CF7ED - e2c28d4830d61e11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StoreABC.ChiTietThongBaoUser"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "386">
+               </Location>
+               <Location
+                  uuid = "DD560669-59DB-4BD2-94BC-EBB05D5CF7ED - dff95fd6061fe712"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoreABC.ChiTietThongBaoUser&gt;"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "DD560669-59DB-4BD2-94BC-EBB05D5CF7ED - b66df0399920fe9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoreABC.ChiTietThongBaoUser&gt;"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "239">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "269A00B8-D266-45BF-9AAE-B6780D3C0264"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoreABC/ChiTietThongBaoUser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F37D4B68-C1F8-4104-91CA-269DCDB57E0A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoreABC/ChiTietThongBaoUser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ChiTietThongBaoUser"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F37D4B68-C1F8-4104-91CA-269DCDB57E0A - 20ea652f77765e0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.__deallocating_deinit"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F37D4B68-C1F8-4104-91CA-269DCDB57E0A - ccc0859fc67b1fdd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StoreABC.ChiTietThongBaoUser"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "F37D4B68-C1F8-4104-91CA-269DCDB57E0A - e2c28d4830d61e11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StoreABC.ChiTietThongBaoUser"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "386">
+               </Location>
+               <Location
+                  uuid = "F37D4B68-C1F8-4104-91CA-269DCDB57E0A - dff95fd6061fe712"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoreABC.ChiTietThongBaoUser&gt;"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "F37D4B68-C1F8-4104-91CA-269DCDB57E0A - b66df0399920fe9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreABC.ChiTietThongBaoUser.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoreABC.ChiTietThongBaoUser&gt;"
+                  moduleName = "StoreABC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinhthanh/Desktop/StoreABC/StoreABC/ChiTietThongBaoUser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "239">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

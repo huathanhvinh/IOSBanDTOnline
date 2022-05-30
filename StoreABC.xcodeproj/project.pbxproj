@@ -14,6 +14,8 @@
 		660623AE280FD457003E2631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660623AC280FD457003E2631 /* Main.storyboard */; };
 		660623B3280FD459003E2631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660623B1280FD459003E2631 /* LaunchScreen.storyboard */; };
 		660623BE280FD45A003E2631 /* StoreABCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660623BD280FD45A003E2631 /* StoreABCTests.swift */; };
+		F33CD2BB2844997200DD8F04 /* ChiTietThongBaoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CD2BA2844997200DD8F04 /* ChiTietThongBaoUser.swift */; };
+		F33CD2BF28449A0200DD8F04 /* ChiTietThongBaoUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CD2BE28449A0200DD8F04 /* ChiTietThongBaoUserCell.swift */; };
 		F33F42C72837FBC400BC1F6F /* SanPhamGioHangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F42C62837FBC400BC1F6F /* SanPhamGioHangCell.swift */; };
 		F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */; };
 		F357FEBF284002C1006FC6B4 /* ThongBaoAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357FEBE284002C1006FC6B4 /* ThongBaoAdmin.swift */; };
@@ -83,6 +85,8 @@
 		660623BF280FD45A003E2631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B1EEC735D183D8B546F4DF9 /* Pods_StoreABCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreABCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		839C000E7E5C5A098F60EC5A /* Pods_StoreABC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreABC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33CD2BA2844997200DD8F04 /* ChiTietThongBaoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiTietThongBaoUser.swift; sourceTree = "<group>"; };
+		F33CD2BE28449A0200DD8F04 /* ChiTietThongBaoUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiTietThongBaoUserCell.swift; sourceTree = "<group>"; };
 		F33F42C62837FBC400BC1F6F /* SanPhamGioHangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanPhamGioHangCell.swift; sourceTree = "<group>"; };
 		F3447865282CAF0400AC759F /* DangKiTaiKhoan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangKiTaiKhoan.swift; sourceTree = "<group>"; };
 		F357FEBE284002C1006FC6B4 /* ThongBaoAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThongBaoAdmin.swift; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 				F357FF0728415044006FC6B4 /* LichSuCell.swift */,
 				F357FF2E284159EA006FC6B4 /* ChiTietLichSuCell.swift */,
 				F357FF3228416235006FC6B4 /* ThongBaoUserCell.swift */,
+				F33CD2BE28449A0200DD8F04 /* ChiTietThongBaoUserCell.swift */,
 			);
 			name = Chung;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				F357FEE0284111B3006FC6B4 /* ThongBaoUser.swift */,
 				F357FF0B28415078006FC6B4 /* LichSuMuaHang.swift */,
 				F357FF0F284155A6006FC6B4 /* ChiTietLichSuMuaHang.swift */,
+				F33CD2BA2844997200DD8F04 /* ChiTietThongBaoUser.swift */,
 			);
 			name = KhachHang;
 			sourceTree = "<group>";
@@ -460,6 +466,7 @@
 				F3D82695283D301D004B5DB5 /* DoiMatKhau.swift in Sources */,
 				F357FF0C28415078006FC6B4 /* LichSuMuaHang.swift in Sources */,
 				F357FF0028413DB6006FC6B4 /* ChiTietHoaDon.swift in Sources */,
+				F33CD2BF28449A0200DD8F04 /* ChiTietThongBaoUserCell.swift in Sources */,
 				F3D6E5F7282CFE1E00AAAA1B /* DangNhap.swift in Sources */,
 				F357FF3728416564006FC6B4 /* ThongBaoNguoiDung.swift in Sources */,
 				F3D6E610282D12AD00AAAA1B /* KhachHangMainMenu.swift in Sources */,
@@ -470,6 +477,7 @@
 				F3FF45632835FF28004181AF /* SanPhamCell.swift in Sources */,
 				F3D8268D283D20B4004B5DB5 /* DanhSachSanPham.swift in Sources */,
 				F3E954F9282F44DB00E0468E /* ThongTinSanPham.swift in Sources */,
+				F33CD2BB2844997200DD8F04 /* ChiTietThongBaoUser.swift in Sources */,
 				F357FEF828413893006FC6B4 /* DanhSachDonHang.swift in Sources */,
 				F3447866282CAF0400AC759F /* DangKiTaiKhoan.swift in Sources */,
 				F357FEE1284111B3006FC6B4 /* ThongBaoUser.swift in Sources */,

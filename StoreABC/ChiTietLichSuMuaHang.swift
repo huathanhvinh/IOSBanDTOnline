@@ -45,7 +45,7 @@ class ChiTietLichSuMuaHang:UIViewController,UITableViewDataSource,UITableViewDel
         })
         
     }
-    
+    //MARK: get cells
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DanhSachSanPham.count
     }

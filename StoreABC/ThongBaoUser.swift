@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseDatabase
 
+var maDHThongBaoUser = ""
+
 class ThongBaoUser: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var lbDonHangChuaXuLy: UILabel!
     @IBOutlet weak var ListDonHang:
@@ -89,4 +91,12 @@ class ThongBaoUser: UIViewController,UITableViewDataSource,UITableViewDelegate {
         })
         return cell
     }
+    //click chi tiết thông báo
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sanPham = DanhSachDonHang[indexPath.row]
+        maDHThongBaoUser = sanPham.IdDonHang
+        let scr = storyboard?.instantiateViewController(withIdentifier: "ChiTietThongBaoUser") as! ChiTietThongBaoUser
+        present(scr, animated: true, completion: nil)
+    }
+    
 }
