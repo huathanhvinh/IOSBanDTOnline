@@ -26,6 +26,8 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
         ref.child("GioHang").observe(.value, with: {(snapshot) in
             if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
                 var TongTien = 0
+                self.DanhSachSanPham.removeAll()
+                self.listSanPhamGioHang.reloadData()
                 for oSnap in oSnapshot {
                     //Lấy thông tin giỏ hàng
                     let ID:String = oSnap.childSnapshot(forPath: "ID").value as? String ?? ""
@@ -190,6 +192,8 @@ class GioHang: UIViewController,UITableViewDataSource,UITableViewDelegate {
                     }
                 }))
                 self.present(alert, animated: true, completion: nil)
+                self.DanhSachSanPham.removeAll()
+                self.listSanPhamGioHang.reloadData()
             case .cancel:
                 print("cancel")
                 

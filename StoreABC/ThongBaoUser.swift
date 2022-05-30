@@ -30,6 +30,8 @@ class ThongBaoUser: UIViewController,UITableViewDataSource,UITableViewDelegate {
         let ref = Database.database().reference()
         ref.child("ThongBaoNguoiDung").observe(.value, with: {(snapshot) in
             if let oSnapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                self.DanhSachDonHang.removeAll()
+                self.ListDonHang.reloadData()
                 for oSnap in oSnapshot {
                     let ID:String = oSnap.childSnapshot(forPath: "ID").value as? String ?? ""
                     let IdDonHang:String = oSnap.childSnapshot(forPath: "IdDonHang").value as? String ?? ""
